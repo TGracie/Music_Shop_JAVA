@@ -21,4 +21,20 @@ public class PianoTest {
         assertEquals("Steinway", steinway.getMake());
         assertEquals("Upright", steinway.getStyle());
     }
+
+    @Test
+    public void setSellPrice(){
+        steinway.setSellPrice(1200);
+        assertEquals(1200, steinway.getSellPrice());
+    }
+
+    @Test
+    public void canPlay(){
+        assertEquals("Doo doo doo play a song", steinway.play());
+    }
+
+    @Test
+    public void usesISell(){
+        assertEquals(500, steinway.calculateMarkup());
+    }
 }

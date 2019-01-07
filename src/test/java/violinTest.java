@@ -21,6 +21,13 @@ public class violinTest {
         assertEquals(1.00, violin.getSize(), 0.1);
     }
 
+    @Test
+    public void setPriceandPlay(){
+        violin.setSellPrice(85);
+        assertEquals(85, violin.getSellPrice());
+        assertEquals("Wamp wamp", violin.play());
+    }
+
 //    @Test
 //    public void canGetMarkup(){
 //        assertEquals(40, violin.getMarkup());

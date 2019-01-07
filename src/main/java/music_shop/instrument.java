@@ -1,6 +1,9 @@
 package music_shop;
 
-public abstract class instrument {
+import behaviours.IPlay;
+import behaviours.ISell;
+
+public abstract class instrument implements IPlay, ISell {
     protected String type;
     protected String colour;
     protected int buyPrice;

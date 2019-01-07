@@ -11,4 +11,12 @@ public class Violin extends instrument{
     public double getSize() {
         return size;
     }
+
+    public String play(){
+        return "Wamp wamp";
+    }
+
+    public int calculateMarkup(){
+        return (this.sellPrice - this.buyPrice);
+    }
 }

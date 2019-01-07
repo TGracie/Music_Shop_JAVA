@@ -18,4 +18,12 @@ public class Piano extends instrument{
         return style;
     }
 
+    public String play(){
+        return "Doo doo doo play a song";
+    }
+
+    public int calculateMarkup(){
+        return (this.sellPrice - this.buyPrice);
+    }
+
 }

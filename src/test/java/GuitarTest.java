@@ -21,4 +21,11 @@ public class GuitarTest {
         assertEquals(6, strato.getNumberOfStrings());
         assertEquals("Stratocaster", strato.getModel());
     }
+
+    @Test
+    public void setPriceandPlay(){
+        strato.setSellPrice(1600);
+        assertEquals(1600, strato.getSellPrice());
+        assertEquals("Feelings!", strato.play());
+    }
 }

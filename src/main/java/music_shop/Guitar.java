@@ -17,4 +17,12 @@ public class Guitar extends instrument{
     public String getModel() {
         return model;
     }
+
+    public String play(){
+        return "Feelings!";
+    }
+
+    public int calculateMarkup(){
+        return (this.sellPrice - this.buyPrice);
+    }
 }
