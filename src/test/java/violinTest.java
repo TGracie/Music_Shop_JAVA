@@ -28,8 +28,8 @@ public class violinTest {
         assertEquals("Wamp wamp", violin.play());
     }
 
-//    @Test
-//    public void canGetMarkup(){
-//        assertEquals(40, violin.getMarkup());
-//    }
+    @Test
+    public void canGetMarkup(){
+        assertEquals(40, violin.calculateMarkup());
+    }
 }

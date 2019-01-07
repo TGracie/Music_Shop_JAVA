@@ -28,4 +28,9 @@ public class GuitarTest {
         assertEquals(1600, strato.getSellPrice());
         assertEquals("Feelings!", strato.play());
     }
+
+    @Test
+    public void canGetMarkup(){
+        assertEquals(300, strato.calculateMarkup());
+    }
 }

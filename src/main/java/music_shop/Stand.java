@@ -1,6 +1,8 @@
 package music_shop;
 
-public class Stand {
+import behaviours.ISell;
+
+public class Stand implements ISell {
     private String colour;
     private int buyPrice;
     private int sellPrice;
@@ -25,5 +27,9 @@ public class Stand {
 
     public void setSellPrice(int sellPrice) {
         this.sellPrice = sellPrice;
+    }
+
+    public int calculateMarkup(){
+        return (this.sellPrice - this.buyPrice);
     }
 }

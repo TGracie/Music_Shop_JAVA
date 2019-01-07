@@ -24,4 +24,9 @@ public class BookTest {
         book.setSellPrice(8);
         assertEquals(8, book.getSellPrice());
     }
+
+    @Test
+    public void getMarkup(){
+        assertEquals(6, book.calculateMarkup());
+    }
 }

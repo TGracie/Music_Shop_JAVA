@@ -25,4 +25,9 @@ public class StandTest {
         stand.setSellPrice(15);
         assertEquals(15, stand.getSellPrice());
     }
+
+    @Test
+    public void getMarkup(){
+        assertEquals(10, stand.calculateMarkup());
+    }
 }
