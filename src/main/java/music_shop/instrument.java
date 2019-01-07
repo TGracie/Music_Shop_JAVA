@@ -28,4 +28,8 @@ public abstract class instrument {
     public int getSellPrice() {
         return sellPrice;
     }
+
+    public void setSellPrice(int sellPrice) {
+        this.sellPrice = sellPrice;
+    }
 }

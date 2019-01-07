@@ -17,4 +17,5 @@ public class Piano extends instrument{
     public String getStyle() {
         return style;
     }
+
 }
